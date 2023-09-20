@@ -6,7 +6,7 @@ function NavLinks(props) {
   return (
     <nav className="header-nav header-font">
       <a href="/">Home</a>
-      <a href="/">About</a>
+      <a href="/">About Me</a>
       <a href="/">Projects</a>
     </nav>
   );

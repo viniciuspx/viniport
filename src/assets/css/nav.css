@@ -10,12 +10,22 @@
 }
 
 .header-nav a:hover {
-  color: limegreen;
+  color: cyan;
+  transition: 0.2s ease-in;
 }
 
 @media only screen and (max-width: 900px) {
-  .header-nav{
+  .header-nav {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    background: rgb(0, 63, 97);
+    margin: auto;
+  }
+
+  .header-nav a {
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 1rem;
   }
 }

@@ -3,5 +3,6 @@ body{
 }
 .main {
   height: 100vh;
-  background-color: lightgreen;
+  background: rgb(0,63,97);
+  background: linear-gradient(0deg, rgba(0,63,97,1) 30%, rgba(2,0,31,1) 100%);
 }
