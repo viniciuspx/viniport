@@ -1,0 +1,22 @@
+.sandwich {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.sandwich div {
+  background-color: black;
+  height: 5px;
+  margin: 5px;
+  width: 80%;
+}
+
+button {
+  background-color: azure;
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}

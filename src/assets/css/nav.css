@@ -1,0 +1,21 @@
+.header-nav {
+  margin: auto;
+}
+
+.header-nav a {
+  text-decoration: none;
+  margin: 1rem;
+  color: black;
+  font-size: larger;
+}
+
+.header-nav a:hover {
+  color: limegreen;
+}
+
+@media only screen and (max-width: 900px) {
+  .header-nav{
+    display: flex;
+    flex-direction: column;
+  }
+}
