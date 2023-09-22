@@ -11,14 +11,14 @@ function App() {
 
   routes = (
     <Routes>
-      <Route path="" element={<Home />} exact />
-      <Route path="about" element={<About />} exact />
-      <Route path="projects" element={<Projects />} exact />
+      <Route path="/" element={<Home />} exact />
+      <Route path="/about" element={<About />} exact />
+      <Route path="/projects" element={<Projects />} exact />
     </Routes>
   );
 
   return (
-    <Router basename={`/${process.env.PUBLIC_URL}`}>
+    <Router basename={"/"}>
       <main>
         <div className="main">
           <Header />
