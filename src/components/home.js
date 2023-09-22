@@ -53,7 +53,7 @@ function Home() {
           </div>
           <details className="home__others">
             <summary>Others:</summary>
-            <p>Delphi, Pascal, Go, Rust, C and C++</p>
+            <p>SQL, MongoDB, Delphi, Pascal, Go, Rust, C and C++</p>
           </details>
         </div>
       </div>
