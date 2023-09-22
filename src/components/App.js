@@ -1,4 +1,8 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Route,
+  Routes,
+  BrowserRouter,
+} from "react-router-dom";
 import "../assets/css/App.css";
 
 import Home from "./home";
@@ -18,14 +22,14 @@ function App() {
   );
 
   return (
-    <Router basename={"/"}>
+    <BrowserRouter basename={"/"}>
       <main>
         <div className="main">
           <Header />
           {routes}
         </div>
       </main>
-    </Router>
+    </BrowserRouter>
   );
 }
 
