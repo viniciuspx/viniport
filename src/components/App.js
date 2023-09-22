@@ -18,7 +18,7 @@ function App() {
   );
 
   return (
-    <Router basename="/viniport">
+    <Router>
       <main>
         <div className="main">
           <Header />

@@ -1,13 +1,14 @@
 import React from "react";
 import "../assets/css/nav.css";
 import "../assets/css/font.css";
+import { Link } from "react-router-dom";
 
 function NavLinks(props) {
   return (
     <nav className="header-nav header-font">
-      <a href="/viniport/">Home</a>
-      <a href="/viniport/about">About Me</a>
-      <a href="/viniport/projects">Projects</a>
+      <Link to="/">Home</Link>
+      <Link to="/about">About Me</Link>
+      <Link to="/projects">Projects</Link>
     </nav>
   );
 }
