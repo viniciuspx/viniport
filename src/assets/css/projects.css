@@ -1,0 +1,16 @@
+.projects-list {
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.projects-list li {
+    padding: 7px;
+}
+  
+.projects-list a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.projects-list ul { list-style-type: "🔰 "; }
