@@ -18,12 +18,14 @@ function App() {
   );
 
   return (
-    <main>
-      <div className="main">
-        <Header />
-        <Router basename="/">{routes}</Router>
-      </div>
-    </main>
+    <Router basename="/viniport">
+      <main>
+        <div className="main">
+          <Header />
+          {routes}
+        </div>
+      </main>
+    </Router>
   );
 }
 
