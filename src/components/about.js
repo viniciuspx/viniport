@@ -27,7 +27,6 @@ function About() {
         </p>
         <hr />
         <h2>Contact information:</h2>
-        <p>
           <address>
             Please contact by{" "}
             <a
@@ -42,7 +41,6 @@ function About() {
               vinicius.gabriel.px@gmail.com
             </a>
           </address>
-        </p>
         <hr />
       </div>
     );
