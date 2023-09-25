@@ -43,7 +43,7 @@ function Home() {
           </div>
         </div>
         <div className="home__container home__right-container">
-          <h2>Languages and Technologies</h2>
+          <h1>Languages and Technologies</h1>
           <div className="home__tech">
             <img src={jslogo} alt="JavaScript"></img>
             <img src={htmllogo} alt="html"></img>
@@ -51,7 +51,7 @@ function Home() {
             <img src={reactlogo} alt="react"></img>
             <img src={javalogo} alt="Java"></img>
           </div>
-          <details className="home__others">
+          <details className="home__others" open>
             <summary>Others:</summary>
             <p>SQL, MongoDB, Delphi, Pascal, Go, Rust, C and C++</p>
           </details>
