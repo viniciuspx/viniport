@@ -5,12 +5,36 @@
 }
 
 .projects-list li {
-    padding: 7px;
-}
-  
-.projects-list a {
-    text-decoration: none;
-    color: lightblue;
+  padding: 7px;
 }
 
-.projects-list ul { list-style-type: "🔰 "; }
+.frontend {
+  font-family: "Cedarville Cursive", cursive;
+  color: lightcoral;
+  font-size: 22px;
+}
+
+.backend {
+  font-family: "Orbitron", sans-serif;
+  color: darkgoldenrod;
+  font-size: 15px;
+}
+
+.projects-list a {
+  text-decoration: none;
+  color:cornflowerblue;
+}
+
+.projects-list a:hover {
+  color: violet;
+}
+
+.projects-list ul {
+  list-style-type: "🔰 ";
+}
+
+.projects-list h1 {
+  margin-inline: auto;
+  text-align: center;
+  font-size: 36px;
+}
