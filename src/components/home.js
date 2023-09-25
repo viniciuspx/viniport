@@ -20,7 +20,7 @@ function Home() {
           <div className="home__img">
             <img src={profilePicture} alt="profile"></img>
           </div>
-          <div className="home__desc">
+          <div className="home__desc home__main-paragraph">
             <p>
               My name is <strong>Vinícius Gabriel</strong> and i am a Software
               Developer with experience in both{" "}

@@ -38,12 +38,12 @@
   font-size: 20px;
 }
 
-.home__desc p {
+.home__main-paragraph > p {
   text-align: center;
   padding: 1rem;
+  margin: 2rem;
   font-family: monospace;
   border-bottom: 2px inset white;
-  margin: 2rem;
   animation: sun-rise 2s ease;
 }
 
@@ -167,9 +167,11 @@ details > summary::details-marker {
 @media only screen and (max-width: 900px) {
   .home{
     flex-direction: column;
+    overflow-x: hidden;
   }
   .home__others{
     font-size: 18px;
+    margin: 30px 0 30px 0;
   }
   .home__others p{
     padding: 10px;
@@ -177,7 +179,9 @@ details > summary::details-marker {
   .home__desc p{
     border-bottom: 0;
     padding: 15px;
-    margin-top: 100px
+  }
+  .home__tech{
+    margin: 30px 0 30px 0;
   }
   .home__img img{
     margin-top: 1rem;
