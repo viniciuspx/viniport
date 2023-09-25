@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 function NavLinks(props) {
   return (
     <nav className="header-nav header-font">
-      <Link to="/">Home</Link>
-      <Link to="/about">About Me</Link>
-      <Link to="/projects">Projects</Link>
+      <Link onClick={props.onClick} to="/">Home</Link>
+      <Link onClick={props.onClick} to="/about">About Me</Link>
+      <Link onClick={props.onClick} to="/projects">Projects</Link>
     </nav>
   );
 }

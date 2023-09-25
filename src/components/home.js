@@ -22,7 +22,7 @@ function Home() {
           </div>
           <div className="home__desc home__main-paragraph">
             <p>
-              My name is <strong>Vinícius Gabriel</strong> and i am a Software
+              My name is <strong>Vinícius Gabriel</strong> and I am a Software
               Developer with experience in both{" "}
               <strong>Backend and Frontend</strong>.
             </p>

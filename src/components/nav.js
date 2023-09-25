@@ -16,11 +16,13 @@ function Nav() {
   const handleOpenSide = () => setShowSideDrawer(true);
   const { width } = useWindowDimensions();
 
+  const clickedLink = () => setShowSideDrawer(false);
+
   return (
     <React.Fragment>
       {showSideDrawer && <Backdrop onClick={handleCloseSide} />}
       <SideDrawer show={showSideDrawer} onClick={setShowSideDrawer}>
-        <NavLinks />
+        <NavLinks onClick={clickedLink}/>
       </SideDrawer>
       {width > 900 ? <NavLinks /> : <Sandwich onClick={handleOpenSide} />}
     </React.Fragment>
