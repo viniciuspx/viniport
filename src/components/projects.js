@@ -15,14 +15,14 @@ function Projects() {
             <Anchor
               href="https://github.com/viniciuspx/viniport"
               text="This page in on Github!"
-            />
+            />{" "}
             &#8594; See the code! <span className="frontend">Frontend</span>
           </li>
           <li>
             <Anchor
               href="https://github.com/viniciuspx/css-ladder"
               text="CSS Ladder"
-            />
+            />{" "}
             &#8594; Plain HTML and CSS - Studying CSS{" "}
             <Anchor
               href="https://viniciuspx.github.io/css-ladder/"
@@ -31,7 +31,7 @@ function Projects() {
             <span className="frontend">Frontend</span>
           </li>
           <li>
-            <Anchor href="https://github.com/viniciuspx/ezcep" text="ezCEP" />
+            <Anchor href="https://github.com/viniciuspx/ezcep" text="ezCEP" />{" "}
             &#8594; CEP Infomartion (Only Brazil Addresses) - ReactJS and Plain
             JS{" "}
             <Anchor

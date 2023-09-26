@@ -10,8 +10,7 @@ function About() {
       <div className="main__about text-font">
         <h2>Aboute me:</h2>
         <p>
-          Software Developer. Back-end Developer in the Vector and Profit teams
-          at Nelogica, enthusiast of new technologies, always willing to learn
+          Software Developer. Back-end Developer, enthusiast of new technologies, always willing to learn
           more. As a back-end developer I think that the notion of front-end
           development is essential for the evolution of my skills, so I am a
           front-end developer as well! Who is great at coding but not very good
