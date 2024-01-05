@@ -11,22 +11,22 @@
 .frontend {
   font-family: "Cedarville Cursive", cursive;
   color: lightcoral;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .backend {
   font-family: "Orbitron", sans-serif;
   color: darkgoldenrod;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .projects-list a {
   text-decoration: none;
-  color:cornflowerblue;
+  color: khaki;
 }
 
 .projects-list a:hover {
-  color: violet;
+  color: greenyellow;
 }
 
 .projects-list ul {

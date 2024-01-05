@@ -1,204 +1,54 @@
-.home {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
+ /* * {
+   border: solid red 1px;
+ } */
 
-.home__container {
-  width: 100%;
-}
+ .home {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   color: white;
+   flex-direction: column;
+ }
 
-.home__img {
-  height: 50%;
-  width: 100%;
-  padding: 5px;
-  display: flex;
-}
+ .presentation {
+   font-size: 58px;
+   text-align: center;
+   margin: 3rem;
+   font-family: 'Share Tech Mono', monospace;
+   color: greenyellow;
+ }
 
-.home__img img {
-  border-radius: 50%;
-  width: 60%;
-  max-width: 300px;
-  object-fit: contain;
-  margin: auto;
-  border: solid 5px rgba(0, 63, 97, 1);
-  box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.3);
-}
+ .pres-content {
+   margin: auto;
+ }
 
-.home__img img:hover {
-  opacity: 0.4;
-  cursor: pointer;
-}
+ .blink {
+   animation: blinker 1s linear infinite;
+ }
 
-.home__desc {
-  color: white;
-  text-align: center;
-  margin: auto;
-  font-size: 20px;
-}
+ .tech {
+   text-align: center;
+   font-family: 'Quicksand', sans-serif;
+ }
 
-.home__main-paragraph > p {
-  text-align: center;
-  padding: 1rem;
-  margin: 2rem;
-  font-family: monospace;
-  border-bottom: 2px inset white;
-  animation: sun-rise 2s ease;
-}
+ .under-paragraph{
+  margin: 5rem;
+  font-size: 24px;
+  max-width: 1000px;
+ }
 
-@keyframes sun-rise {
-  from {
-    transform: translateY(110vh);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-  }
-}
+ @keyframes blinker {
+   50% {
+     opacity: 0;
+   }
+ }
 
-.home__left-container{
-  height: fit-content;
-  margin: auto;
-}
+ @media only screen and (max-width: 900px) {
+   .home {
+     overflow-x: hidden;
+   }
 
-.home__right-container {
-  display: flex;
-  flex-direction: column;
-  animation: fadein 3s;
-  height: fit-content;
-  margin: auto;
-}
-
-.home__right-container img {
-  align-self: center;
-  margin: auto;
-  flex-wrap: wrap;
-}
-
-.home__right-container img:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
-
-.home__tech {
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 350px;
-  height: auto;
-}
-
-.home__right-container h1{
-  color: white;
-  text-align: center;
-}
-
-.home__others {
-  width: 100%;
-  font-size: 22px;
-  margin: auto;
-  color: white;
-  text-align: center;
-}
-
-.home__paragraph{
-  text-align: justify;
-  font-size: 20px;
-  color: white;
-  padding: 5px;
-  margin-inline: 15px;
-  margin-top: 50px;
-}
-
-summary {
-  cursor: pointer;
-  width: fit-content;
-  margin-inline: auto;
-}
-
-summary:hover {
-  color: cyan;
-}
-
-details > summary {
-  list-style: none;
-}
-details > summary::details-marker {
-  display: none;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes shake {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .home{
-    flex-direction: column;
-    overflow-x: hidden;
-  }
-  .home__others{
-    font-size: 18px;
-    margin: 30px 0 30px 0;
-  }
-  .home__others p{
-    padding: 10px;
-  }
-  .home__desc p{
-    border-bottom: 0;
-    padding: 15px;
-  }
-  .home__tech{
-    margin: 30px 0 30px 0;
-    max-width: 100%;
-  }
-  .home__img img{
-    margin-top: 1rem;
-    height: 250px;
-    width: 250px;
-  }
-  .home__right-container{
-    border: 0;
-  }
-}
+   .presentation {
+     height: 150px;
+   }
+ }

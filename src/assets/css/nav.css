@@ -5,13 +5,14 @@
 .header-nav a {
   text-decoration: none;
   margin: 1rem;
-  color: black;
+  color: white;
   font-size: larger;
 }
 
 .header-nav a:hover {
-  color: cyan;
+  color: greenyellow;
   transition: 0.2s ease-in;
+  border-color: greenyellow;
 }
 
 @media only screen and (max-width: 900px) {
@@ -19,7 +20,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    background: rgb(0, 63, 97);
+    background: black;
     margin: auto;
   }
 

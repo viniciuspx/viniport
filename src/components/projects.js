@@ -10,6 +10,7 @@ function Projects() {
     return (
       <div className="text-font projects-list">
         <h1>Projects List</h1>
+        Links to <strong>Github</strong> Repos and <strong>live Pages</strong> links:
         <ul>
           <li>
             <Anchor
@@ -26,7 +27,7 @@ function Projects() {
             &#8594; Plain HTML and CSS - Studying CSS{" "}
             <Anchor
               href="https://viniciuspx.github.io/css-ladder/"
-              text="Link to page"
+              text="Page"
             />{" "}
             <span className="frontend">Frontend</span>
           </li>
@@ -36,7 +37,7 @@ function Projects() {
             JS{" "}
             <Anchor
               href="https://viniciuspx.github.io/ezcep/"
-              text="Link to page"
+              text="Page"
             />{" "}
             <span className="frontend">Frontend</span>
           </li>
@@ -48,7 +49,7 @@ function Projects() {
             &#8594; SPA of a Help Center ReactJS + JS{" "}
             <Anchor
               href="https://viniciuspx.github.io/ghost-help-center/"
-              text="Link to page"
+              text="Page"
             />{" "}
             <span className="frontend">Frontend</span>
           </li>
@@ -69,7 +70,7 @@ function Projects() {
             &#8594; Calculator made with ReactJS{" "}
             <Anchor
               href="https://viniciuspx.github.io/calculator/"
-              text="Link to page"
+              text="Page"
             />{" "}
             <span className="frontend">Frontend</span>
           </li>
@@ -149,7 +150,7 @@ function Projects() {
             &#8594; Tictactoe Game - Only Frontend: ReactJS{" "}
             <Anchor
               href="https://viniciuspx.github.io/tictactoe/"
-              text="Link to page"
+              text="Page"
             />{" "}
             <span className="frontend">Frontend</span>
           </li>
@@ -158,7 +159,7 @@ function Projects() {
             &#8594; First Ever webpage Simple HTML + CSS{" "}
             <Anchor
               href="https://viniciuspx.github.io/JojoPage/"
-              text="Link to page"
+              text="Page"
             />{" "}
             <span className="frontend">Frontend</span>
           </li>
