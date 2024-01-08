@@ -1,5 +1,5 @@
 .main-header {
-  height: 10%;
+  height: 10vh;
   background-color: black;
   display: flex;
   box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
@@ -24,6 +24,6 @@
 }
 
 .main-header h2:hover {
-  color: cyan;
+  color: greenyellow;
   transition: 0.2s ease-in;
 }

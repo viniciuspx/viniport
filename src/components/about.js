@@ -4,11 +4,13 @@ import Card from "./card";
 import "../assets/css/about.css";
 import "../assets/css/font.css";
 import profilePicture from "../assets/img/profile.png";
+import down from "../assets/img/down.png";
+import up from "../assets/img/up.png";
 
 function About() {
   const createAbout = () => {
     return (
-      <div className="main__about text-font">
+      <div className="main__about text-font" id="profile">
         <div className="home__img">
           <img src={profilePicture} alt="profile"></img>
         </div>
@@ -21,38 +23,54 @@ function About() {
           at Design. Main programming languages are JS, Java, Delphi, C and C++.
           HTML and CSS are great skills to have under my belt too.
         </p>
-        <hr />
-        <h2>Education:</h2>
-        <p>
-          UFG - Universidade Federal de Goiás, Goiânia
-          <div className="university">
-            <strong>Masters in Computer Science</strong> <span>2020 - 2022</span>
-          </div>
-          <div className="university">
-            <strong>Bacharel in Computer Science</strong> <span>2014 - 2019</span>
-          </div>
-        </p>
-        <hr />
-        <h2>Contact information:</h2>
-        <address>
-          Please contact by{" "}
-          <a
-            href="https://www.linkedin.com/in/viniciuspx"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Linkedin
-          </a>{" "}
-          or{" "}
-          <a href="mailto:vinicius.gabriel.px@gmail.com">
-            vinicius.gabriel.px@gmail.com
-          </a>
-        </address>
-        <hr />
+        <a href={"#edu"}>
+          <img src={down} alt="downarrow" className="arrow blink"></img>
+        </a>
       </div>
     );
   };
-  return <Card children={createAbout()} />;
+
+  const createEducation = () => {
+    return (<div className="main__about text-font" id="edu">
+      <a href="#profile">
+      <img src={up} alt="uparrow" className="arrow blink"></img>
+
+      </a>
+      <hr />
+      <h2>Education:</h2>
+      <p>
+        UFG - Universidade Federal de Goiás, Goiânia
+        <div className="university">
+          <strong>Masters in Computer Science</strong> <span>2020 - 2022</span>
+        </div>
+        <div className="university">
+          <strong>Bacharel in Computer Science</strong> <span>2014 - 2019</span>
+        </div>
+      </p>
+      <hr />
+      <h2>Contact information:</h2>
+      <address>
+        Please contact by{" "}
+        <a
+          href="https://www.linkedin.com/in/viniciuspx"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Linkedin
+        </a>{" "}
+        or{" "}
+        <a href="mailto:vinicius.gabriel.px@gmail.com">
+          vinicius.gabriel.px@gmail.com
+        </a>
+      </address>
+      <hr />
+    </div>);
+  }
+
+  return (<>
+    <Card children={createAbout()} />;
+    <Card children={createEducation()} />;
+  </>)
 }
 
 export default About;

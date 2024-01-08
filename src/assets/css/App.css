@@ -1,8 +1,14 @@
 body {
   margin: 0;
 }
-.main {
+
+main {
   height: 100vh;
   overflow: scroll;
   background-color: black;
+  scroll-snap-type: y mandatory;
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -16,7 +16,6 @@ import mongologo from "../assets/img/mongo.png";
 import tslogo from "../assets/img/ts.png";
 import twlogo from "../assets/img/tw.png";
 import Typewriter from "./typewriter";
-import Footer from "./footer";
 
 function Home() {
   const createHome = () => {
@@ -64,7 +63,6 @@ function Home() {
             </a>
           </div>
         </div>
-        <Footer />
       </div>
     );
   };
