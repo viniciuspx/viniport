@@ -33,10 +33,8 @@ function About() {
   const createEducation = () => {
     return (<div className="main__about text-font" id="edu">
       <a href="#profile">
-      <img src={up} alt="uparrow" className="arrow blink"></img>
-
+        <img src={up} alt="uparrow" className="arrow blink"></img>
       </a>
-      <hr />
       <h2>Education:</h2>
       <p>
         UFG - Universidade Federal de Goiás, Goiânia
