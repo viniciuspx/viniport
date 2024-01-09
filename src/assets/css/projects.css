@@ -10,13 +10,13 @@
 
 .frontend {
   font-family: "Cedarville Cursive", cursive;
-  color: lightcoral;
+  color: white;
   font-size: 18px;
 }
 
 .backend {
   font-family: "Orbitron", sans-serif;
-  color: darkgoldenrod;
+  color: white;
   font-size: 12px;
 }
 
@@ -37,4 +37,19 @@
   margin-inline: auto;
   text-align: center;
   font-size: 36px;
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 900px) {
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  h3{
+    text-align: center;
+  }
 }

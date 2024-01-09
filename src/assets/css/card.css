@@ -1,5 +1,6 @@
 .main-container {
   height: 80vh;
+  width: 100%;
   display: flex;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
