@@ -9,6 +9,7 @@ import port from "../assets/img/port.png";
 import ladder from "../assets/img/ladder.png";
 import ezcep from "../assets/img/ezcep.png";
 import ghc from "../assets/img/ghc.png";
+import iresume from "../assets/img/iresume.png";
 
 function Projects() {
   const createProjects = () => {
@@ -28,11 +29,11 @@ function Projects() {
           />
 
           <ProjectCard
-            img={ladder}
-            link="https://github.com/viniciuspx/css-ladder"
-            pageLink="https://viniciuspx.github.io/css-ladder/"
-            text="CSS Ladder"
-            descText="Plain HTML and CSS - Studying CSS"
+            img={iresume}
+            pageLink="https://iresume-web.vercel.app/"
+            link=""
+            text="Private Project"
+            descText="Resume creator APP! Web and Mobile (ReactJS + React Native)"
             type="frontend"
           />
 
@@ -51,6 +52,15 @@ function Projects() {
             pageLink="https://viniciuspx.github.io/ghost-help-center/"
             text="GHC"
             descText="SPA of a Help Center ReactJS + JS"
+            type="frontend"
+          />
+
+          <ProjectCard
+            img={ladder}
+            link="https://github.com/viniciuspx/css-ladder"
+            pageLink="https://viniciuspx.github.io/css-ladder/"
+            text="CSS Ladder"
+            descText="Plain HTML and CSS - Studying CSS"
             type="frontend"
           />
         </div>
