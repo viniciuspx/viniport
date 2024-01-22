@@ -6,6 +6,21 @@ import github from "../assets/img/github.png";
 import Anchor from "./anchor";
 
 function ProjectCard(props) {
+  const projectType = (type) => {
+    if (type === "frontend") {
+      return <span className="frontend">Frontend</span>;
+    } else if (type === "backend") {
+      return <span className="frontend">Backend</span>;
+    } else if (type === "both") {
+      return (
+        <div>
+          <span className="frontend">Frontend</span>+
+          <span className="backend">Backend</span>
+        </div>
+      );
+    }
+  };
+
   return (
     <div className="project-card">
       <div className="github-link">
@@ -16,11 +31,7 @@ function ProjectCard(props) {
         <img src={props.img} alt="thumbnail" className="thumb"></img>
       </a>
       {props.descText}
-      {props.type === "frontend" ? (
-        <span className="frontend">Frontend</span>
-      ) : (
-        <span className="backend">Backend</span>
-      )}
+      {projectType(props.type)}
     </div>
   );
 }

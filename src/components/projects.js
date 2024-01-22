@@ -10,6 +10,7 @@ import ladder from "../assets/img/ladder.png";
 import ezcep from "../assets/img/ezcep.png";
 import ghc from "../assets/img/ghc.png";
 import iresume from "../assets/img/iresume.png";
+import scheduler from "../assets/img/scheduler.png";
 
 function Projects() {
   const createProjects = () => {
@@ -29,10 +30,19 @@ function Projects() {
           />
 
           <ProjectCard
+            img={scheduler}
+            pageLink="https://scheduler-eosin.vercel.app/"
+            link="https://github.com/viniciuspx/scheduler"
+            text="Scheduler"
+            descText="Scheduler App (NextJS, Typescript, ReactJs, Tailwind and Express)"
+            type="both"
+          />
+
+          <ProjectCard
             img={iresume}
             pageLink="https://iresume-web.vercel.app/"
             link=""
-            text="Private Project"
+            text="iResume"
             descText="Resume creator APP! Web and Mobile (ReactJS + React Native)"
             type="frontend"
           />
@@ -68,6 +78,15 @@ function Projects() {
         <h3>Other Projects:</h3>
 
         <ul>
+          <li>
+            <Anchor
+              href="https://github.com/viniciuspx/scheduler-api"
+              text="Scheduler-API"
+            /> {" "}
+            &#8594; Backend for the Scheduler project - NodeJS, TypeScript and ExpressJS
+            ( <span className="backend">Backend</span> )
+          </li>
+
           <li>
             <Anchor
               href="https://github.com/viniciuspx/json2csv"
