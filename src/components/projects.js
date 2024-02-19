@@ -11,6 +11,7 @@ import ezcep from "../assets/img/ezcep.png";
 import ghc from "../assets/img/ghc.png";
 import iresume from "../assets/img/iresume.png";
 import scheduler from "../assets/img/scheduler.png";
+import events from "../assets/img/events.png";
 
 function Projects() {
   const createProjects = () => {
@@ -27,6 +28,15 @@ function Projects() {
             text="This page in on Github!"
             descText="This Portfolio :)"
             type="frontend"
+          />
+
+          <ProjectCard
+            img={events}
+            pageLink="https://events-orcin.vercel.app/"
+            link="https://github.com/viniciuspx/events"
+            text="Events Calendar App"
+            descText="Calendar App (NextJS, Typescript, ReactJs, Tailwind, Express and MongoDB)"
+            type="both"
           />
 
           <ProjectCard
@@ -82,9 +92,9 @@ function Projects() {
             <Anchor
               href="https://github.com/viniciuspx/scheduler-api"
               text="Scheduler-API"
-            /> {" "}
-            &#8594; Backend for the Scheduler project - NodeJS, TypeScript and ExpressJS
-            ( <span className="backend">Backend</span> )
+            />{" "}
+            &#8594; Backend for the Scheduler project - NodeJS, TypeScript and
+            ExpressJS ( <span className="backend">Backend</span> )
           </li>
 
           <li>
