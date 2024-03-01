@@ -12,6 +12,7 @@ import ghc from "../assets/img/ghc.png";
 import iresume from "../assets/img/iresume.png";
 import scheduler from "../assets/img/scheduler.png";
 import events from "../assets/img/events.png";
+import mono from "../assets/img/mono.png";
 
 function Projects() {
   const createProjects = () => {
@@ -37,6 +38,15 @@ function Projects() {
             text="Events Calendar App"
             descText="Calendar App (NextJS, Typescript, ReactJs, Tailwind, Express and MongoDB)"
             type="both"
+          />
+
+          <ProjectCard
+            img={mono}
+            pageLink="https://monogram-pi.vercel.app/"
+            link="https://github.com/viniciuspx/monogram"
+            text="Shop Home Page"
+            descText="A simple home page for products"
+            type="frontend"
           />
 
           <ProjectCard
