@@ -10,6 +10,6 @@ https://viniciuspx.netlify.app/
 
 ## Version
 
-# Basic 1.0
+# Basic 0.5
 
-1.0 First version: Basic navigation, some animation, it does the job. 👍
+0.5 First version: Basic navigation, some animation, it does the job. 👍
