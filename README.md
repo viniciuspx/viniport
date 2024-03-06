@@ -1,6 +1,6 @@
 ## Portfolio Vinícius Gabriel
 
-This is my main portfolio, the code is meant to be shared and public. It's a portfolio isn't it? 😄
+This is my main portfolio, the code is meant to be shared and public.
 
 Deployed with Netlify!
 
