@@ -15,6 +15,8 @@ import linkedinlogo from "../assets/img/linkedin.png";
 import mongologo from "../assets/img/mongo.png";
 import tslogo from "../assets/img/ts.png";
 import twlogo from "../assets/img/tw.png";
+import pylogo from "../assets/img/py.png"
+import post from "../assets/img/post.png"
 import Typewriter from "./typewriter";
 
 function Home() {
@@ -27,26 +29,32 @@ function Home() {
           </div>
         </div>
         <div className="tech">
-          <h1>Languages and Technologies</h1>
-          <div>
-            <img src={jslogo} alt="JavaScript"></img>
-            <img src={tslogo} alt="TypeScript"></img>
-            <img src={htmllogo} alt="html"></img>
-            <img src={csslogo} alt="css"></img>
-            <img src={reactlogo} alt="react"></img>
-            <img src={twlogo} alt="Tailwind"></img>
-            <img src={javalogo} alt="Java"></img>
-            <img src={mongologo} alt="MongoDB"></img>
+          <div className="tech-container">
+            <div className="tech-title">
+              {"> "} <Typewriter text="Languages and Technologies" delay={0} loop={true} />
+            </div>
+            <div>
+              <img src={pylogo} alt="Python"></img>
+              <img src={jslogo} alt="JavaScript"></img>
+              <img src={tslogo} alt="TypeScript"></img>
+              <img src={htmllogo} alt="html"></img>
+              <img src={csslogo} alt="css"></img>
+              <img src={reactlogo} alt="react"></img>
+              <img src={twlogo} alt="Tailwind"></img>
+              <img src={javalogo} alt="Java"></img>
+              <img src={mongologo} alt="MongoDB"></img>
+              <img src={post} alt="PostgreSQL"></img>
+            </div>
           </div>
+
           <div className="under-paragraph">
-            <p>
-              <strong>Fullstack</strong> / <strong>Web</strong> Developer and{" "}
-              <em><strong>Computer Scientist</strong></em>. Always open to learning new
-              technologies and programming languages, great at code maintenance
-              and analysis.
-            </p>
+            <strong>Fullstack</strong> / <strong>Web</strong> Developer and{" "}
+            <em><strong>Computer Scientist</strong></em>. Always open to learning new
+            technologies and programming languages, great at code maintenance
+            and analysis.
           </div>
-          <div>
+
+          <div className="socials">
             <a
               href="https://github.com/viniciuspx"
               target="_blank"

@@ -1,7 +1,7 @@
-footer{
+footer {
     height: 5vh;
     text-align: center;
     color: white;
-    padding: 3px;
-    font-size: 12px;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
 }

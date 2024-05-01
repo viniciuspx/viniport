@@ -8,6 +8,7 @@
    display: flex;
    color: white;
    flex-direction: column;
+   overflow-y: hidden;
  }
 
  .presentation {
@@ -30,12 +31,28 @@
  .tech {
    text-align: center;
    font-family: 'Quicksand', sans-serif;
+   margin: 1rem;
+ }
+
+ .tech-title{
+  margin: 2rem;
+  font-size: x-large;
+ }
+
+ .tech-container{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
  }
 
  .under-paragraph{
-  margin: 5rem;
+  margin: 5rem 1rem 5rem 1rem;
   font-size: 24px;
   max-width: 1000px;
+ }
+
+ .socials{
+  margin: 5rem;
  }
 
  @keyframes blinker {
@@ -47,6 +64,10 @@
  @media only screen and (max-width: 900px) {
    .home {
      overflow-x: hidden;
+   }
+
+   .under-paragraph{
+    font-size: 20px;
    }
 
    .presentation {

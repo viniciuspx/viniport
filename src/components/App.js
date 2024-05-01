@@ -10,7 +10,6 @@ import Home from "./home";
 import Header from "./header";
 import About from "./about";
 import Projects from "./projects";
-import Footer from "./footer";
 
 function App() {
   let routes;
@@ -29,7 +28,6 @@ function App() {
       <main>
         <Header />
         {routes}
-        <Footer />
       </main>
     </Router>
   );
