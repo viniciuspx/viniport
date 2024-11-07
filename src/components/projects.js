@@ -1,10 +1,10 @@
 import React from "react";
-
 import Card from "./card";
 import Anchor from "./anchor";
-
-import "../assets/css/projects.css";
 import ProjectCard from "./projectCard";
+import "../assets/css/projects.css";
+
+// Images
 import port from "../assets/img/port.png";
 import ladder from "../assets/img/ladder.png";
 import ezcep from "../assets/img/ezcep.png";
@@ -13,212 +13,165 @@ import iresume from "../assets/img/iresume.png";
 import scheduler from "../assets/img/scheduler.png";
 import events from "../assets/img/events.png";
 import mono from "../assets/img/mono.png";
+import dank from "../assets/img/dank.png";
+import nelo from "../assets/img/nelo.png";
+import sparklean from "../assets/img/sparklean.png";
+
+const PROJECTS = [
+  {
+    img: port,
+    pageLink: "/",
+    link: "https://github.com/viniciuspx/viniport",
+    text: "This page in on Github!",
+    descText: "This Portfolio :)",
+    type: "frontend",
+  },
+  {
+    img: events,
+    pageLink: "https://events-orcin.vercel.app/",
+    link: "https://github.com/viniciuspx/events",
+    text: "Events Calendar App",
+    descText:
+      "Calendar App (NextJS, TypeScript, ReactJS, Tailwind, Express, MongoDB)",
+    type: "both",
+  },
+  {
+    img: mono,
+    pageLink: "https://monogram-pi.vercel.app/",
+    link: "https://github.com/viniciuspx/monogram",
+    text: "Shop Home Page",
+    descText: "A simple home page for products",
+    type: "frontend",
+  },
+  {
+    img: scheduler,
+    pageLink: "https://scheduler-eosin.vercel.app/",
+    link: "https://github.com/viniciuspx/scheduler",
+    text: "Scheduler",
+    descText: "Scheduler App (NextJS, TypeScript, ReactJS, Tailwind, Express)",
+    type: "both",
+  },
+  {
+    img: iresume,
+    pageLink: "https://iresume-web.vercel.app/",
+    link: "",
+    text: "iResume",
+    descText: "Resume creator APP! Web and Mobile (ReactJS + React Native)",
+    type: "frontend",
+  },
+  {
+    img: ezcep,
+    pageLink: "https://viniciuspx.github.io/ezcep/",
+    link: "https://github.com/viniciuspx/ezcep",
+    text: "ezCEP",
+    descText: "CEP Information (Only Brazil Addresses)",
+    type: "frontend",
+  },
+  {
+    img: ghc,
+    pageLink: "https://viniciuspx.github.io/ghost-help-center/",
+    link: "https://github.com/viniciuspx/ghost-help-center",
+    text: "GHC",
+    descText: "SPA of a Help Center (ReactJS + JS)",
+    type: "frontend",
+  },
+  {
+    img: ladder,
+    pageLink: "https://viniciuspx.github.io/css-ladder/",
+    link: "https://github.com/viniciuspx/css-ladder",
+    text: "CSS Ladder",
+    descText: "Plain HTML and CSS - Studying CSS",
+    type: "frontend",
+  },
+];
+
+const OTHER_PROJECTS = [
+  {
+    name: "Scheduler-API",
+    href: "https://github.com/viniciuspx/scheduler-api",
+    description:
+      "Backend for the Scheduler project - NodeJS, TypeScript, ExpressJS",
+    type: "backend",
+  },
+  {
+    name: "json2csv",
+    href: "https://github.com/viniciuspx/json2csv",
+    description:
+      "JSON to CSV converter - Backend: JAVA 17 + SpringBoot Frontend: ReactJS",
+    type: "both",
+  },
+  // Add other projects here similarly
+];
+
+const LIVE_PAGES = [
+  {
+    img: dank,
+    pageLink: "https://dankcitydelivery.com",
+    link: "https://dankcitydelivery.com",
+    text: "Dank City Delivery",
+    descText: "Role: Fullstack Developer | 1 year of experience",
+    type: "both",
+  },
+  {
+    img: nelo,
+    pageLink: "https://www.nelogica.com.br/",
+    link: "https://www.nelogica.com.br/",
+    text: "Nelogica",
+    descText: "Role: Backend Developer | 2 years of experience",
+    type: "backend",
+  },
+  {
+    img: sparklean,
+    pageLink: "https://sparkleanteam.com/",
+    link: "https://sparkleanteam.com/",
+    text: "Sparklean Team",
+    descText: "Role: Lead Developer | Side Project",
+    type: "both",
+  },
+];
+
+const ProjectList = () => (
+  <div className="project-cards">
+    {PROJECTS.map((project) => (
+      <ProjectCard key={project.text} {...project} />
+    ))}
+  </div>
+);
+
+const OtherProjectsList = () => (
+  <ul>
+    {OTHER_PROJECTS.map((project) => (
+      <li key={project.name}>
+        <Anchor href={project.href} text={project.name} /> &#8594;{" "}
+        {project.description} (
+        <span className={project.type}>{project.type}</span>)
+      </li>
+    ))}
+  </ul>
+);
+
+const LivePageList = () => (
+  <div className="project-cards">
+    {LIVE_PAGES.map((project) => (
+      <ProjectCard key={project.text} {...project} />
+    ))}
+  </div>
+);
 
 function Projects() {
-  const createProjects = () => {
-    return (
+  return (
+    <Card>
       <div className="text-font projects-list">
         <h1>Projects</h1>
-        <h3>Project Live Pages:</h3>
-
-        <div className="project-cards">
-          <ProjectCard
-            img={port}
-            pageLink="/"
-            link="https://github.com/viniciuspx/viniport"
-            text="This page in on Github!"
-            descText="This Portfolio :)"
-            type="frontend"
-          />
-
-          <ProjectCard
-            img={events}
-            pageLink="https://events-orcin.vercel.app/"
-            link="https://github.com/viniciuspx/events"
-            text="Events Calendar App"
-            descText="Calendar App (NextJS, Typescript, ReactJs, Tailwind, Express and MongoDB)"
-            type="both"
-          />
-
-          <ProjectCard
-            img={mono}
-            pageLink="https://monogram-pi.vercel.app/"
-            link="https://github.com/viniciuspx/monogram"
-            text="Shop Home Page"
-            descText="A simple home page for products"
-            type="frontend"
-          />
-
-          <ProjectCard
-            img={scheduler}
-            pageLink="https://scheduler-eosin.vercel.app/"
-            link="https://github.com/viniciuspx/scheduler"
-            text="Scheduler"
-            descText="Scheduler App (NextJS, Typescript, ReactJs, Tailwind and Express)"
-            type="both"
-          />
-
-          <ProjectCard
-            img={iresume}
-            pageLink="https://iresume-web.vercel.app/"
-            link=""
-            text="iResume"
-            descText="Resume creator APP! Web and Mobile (ReactJS + React Native)"
-            type="frontend"
-          />
-
-          <ProjectCard
-            img={ezcep}
-            link="https://github.com/viniciuspx/ezcep"
-            pageLink="https://viniciuspx.github.io/ezcep/"
-            text="ezCEP"
-            descText="CEP Infomartion (Only Brazil Addresses)"
-            type="frontend"
-          />
-
-          <ProjectCard
-            img={ghc}
-            link="https://github.com/viniciuspx/ghost-help-center"
-            pageLink="https://viniciuspx.github.io/ghost-help-center/"
-            text="GHC"
-            descText="SPA of a Help Center ReactJS + JS"
-            type="frontend"
-          />
-
-          <ProjectCard
-            img={ladder}
-            link="https://github.com/viniciuspx/css-ladder"
-            pageLink="https://viniciuspx.github.io/css-ladder/"
-            text="CSS Ladder"
-            descText="Plain HTML and CSS - Studying CSS"
-            type="frontend"
-          />
-        </div>
-
+        <h3>Where I've Worked:</h3>
+        <LivePageList />
+        <h3>Projects:</h3>
+        <ProjectList />
         <h3>Other Projects:</h3>
-
-        <ul>
-          <li>
-            <Anchor
-              href="https://github.com/viniciuspx/scheduler-api"
-              text="Scheduler-API"
-            />{" "}
-            &#8594; Backend for the Scheduler project - NodeJS, TypeScript and
-            ExpressJS ( <span className="backend">Backend</span> )
-          </li>
-
-          <li>
-            <Anchor
-              href="https://github.com/viniciuspx/json2csv"
-              text="json2csv"
-            />{" "}
-            &#8594; JSON to CSV converter - Backend: JAVA 17 + SpringBoot
-            Frontend: ReactJS ( <span className="frontend">Frontend</span> +{" "}
-            <span className="backend">Backend</span> )
-          </li>
-          <li>
-            <Anchor
-              href="https://github.com/viniciuspx/calculator"
-              text="calculator"
-            />{" "}
-            &#8594; Calculator made with ReactJS{" "}
-            <Anchor
-              href="https://viniciuspx.github.io/calculator/"
-              text="Page"
-            />{" "}
-            ( <span className="frontend">Frontend</span> )
-          </li>
-          <li>
-            <Anchor
-              href="https://github.com/viniciuspx/crm-api"
-              text="crm-api"
-            />{" "}
-            &#8594; Simple API to control Employees - Backend: JAVA 17 +
-            SpringBoot DB: MongoDB ( <span className="backend">Backend</span> )
-          </li>
-          <li>
-            <Anchor
-              href="https://github.com/viniciuspx/simple-crud-springboot"
-              text="simple-crud"
-            />{" "}
-            &#8594; Simple CRUD API - Backend: JAVA 17 + SpringBoot ({" "}
-            <span className="backend">Backend</span> )
-          </li>
-          <li>
-            <Anchor
-              href="https://github.com/viniciuspx/todo-list"
-              text="todo-list"
-            />{" "}
-            &#8594; Todo List - Backend: JAVA 17 + SpringBoot Frontend: ReactJS{" "}
-            ( <span className="frontend">Frontend</span> +{" "}
-            <span className="backend">Backend</span> )
-          </li>
-          <li>
-            <Anchor
-              href="https://github.com/viniciuspx/challange-units"
-              text="units"
-            />{" "}
-            &#8594; Company Logistic Backend - Backend: Typescript ({" "}
-            <span className="backend">Backend</span> )
-          </li>
-          <li>
-            <Anchor
-              href="https://github.com/viniciuspx/spot-sharer"
-              text="spot-sharer"
-            />{" "}
-            &#8594; An App to share spots visited (Incomplete) - Backend:
-            ExpressJS + JS Frontend: ReactJS ({" "}
-            <span className="frontend">Frontend</span> +{" "}
-            <span className="backend">Backend</span> )
-          </li>
-          <li>
-            <Anchor
-              href="https://github.com/viniciuspx/unleet-codes"
-              text="unleet-codes"
-            />{" "}
-            &#8594; Leet Code Solutions - Various Languages (mainly JS) Same as
-            Repo <Anchor href="https://github.com/viniciuspx/TAP" text="TAP" />{" "}
-            ( <span className="backend">coding</span> )
-          </li>
-          <li>
-            <Anchor
-              href="https://github.com/viniciuspx/simple-list"
-              text="simple-list"
-            />{" "}
-            &#8594; Simple-list Frontend: ReactJS ({" "}
-            <span className="frontend">Frontend</span> )
-          </li>
-          <li>
-            <Anchor
-              href="https://github.com/viniciuspx/simple-express-api"
-              text="simple-express-API"
-            />{" "}
-            &#8594; CRUD API - Backend: ExpressJS + JS ({" "}
-            <span className="backend">Backend</span> )
-          </li>
-          <li>
-            <Anchor
-              href="https://github.com/viniciuspx/tictactoe"
-              text="tictactoe"
-            />{" "}
-            &#8594; Tictactoe Game - Only Frontend: ReactJS{" "}
-            <Anchor
-              href="https://viniciuspx.github.io/tictactoe/"
-              text="Page"
-            />{" "}
-            ( <span className="frontend">Frontend</span> )
-          </li>
-          <li>
-            <Anchor href="https://github.com/viniciuspx/JojoPage" text="JOJO" />{" "}
-            &#8594; First Ever webpage Simple HTML + CSS{" "}
-            <Anchor href="https://viniciuspx.github.io/JojoPage/" text="Page" />{" "}
-            ( <span className="frontend">Frontend</span> )
-          </li>
-        </ul>
+        <OtherProjectsList />
       </div>
-    );
-  };
-  return <Card children={createProjects()}></Card>;
+    </Card>
+  );
 }
 
 export default Projects;

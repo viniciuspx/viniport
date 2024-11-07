@@ -1,37 +1,30 @@
 import React from "react";
-
 import "../assets/css/projectCard.css";
 import github from "../assets/img/github.png";
-
 import Anchor from "./anchor";
 
-function ProjectCard(props) {
-  const projectType = (type) => {
-    if (type === "frontend") {
-      return <span className="frontend">Frontend</span>;
-    } else if (type === "backend") {
-      return <span className="frontend">Backend</span>;
-    } else if (type === "both") {
-      return (
-        <div>
-          <span className="frontend">Frontend</span>+
-          <span className="backend">Backend</span>
-        </div>
-      );
-    }
+function ProjectCard({ img, pageLink, link, text, descText, type }) {
+  const projectTypes = {
+    frontend: <span className="frontend">Frontend</span>,
+    backend: <span className="backend">Backend</span>,
+    both: (
+      <div>
+        <span className="frontend">Frontend</span> + <span className="backend">Backend</span>
+      </div>
+    ),
   };
 
   return (
     <div className="project-card">
       <div className="github-link">
-        <img src={github} alt="github-logo" className="github-img"></img>
-        <Anchor href={props.link} text={props.text} />
+        <img src={github} alt="GitHub logo" className="github-img" />
+        <Anchor href={link} text={text} />
       </div>
-      <a href={props.pageLink} target="_blank" rel="noreferrer">
-        <img src={props.img} alt="thumbnail" className="thumb"></img>
+      <a href={pageLink} target="_blank" rel="noopener noreferrer">
+        <img src={img} alt="Project thumbnail" className="thumb" />
       </a>
-      {props.descText}
-      {projectType(props.type)}
+      <p className="description">{descText}</p>
+      <div className="project-type">{projectTypes[type]}</div>
     </div>
   );
 }
