@@ -163,11 +163,11 @@ function Projects() {
     <Card>
       <div className="text-font projects-list">
         <h1>Projects</h1>
-        <h3>Where I've Worked:</h3>
+        <h2>Where I've Worked:</h2>
         <LivePageList />
-        <h3>Projects:</h3>
+        <h2>Projects:</h2>
         <ProjectList />
-        <h3>Other Projects:</h3>
+        <h2>Other Projects:</h2>
         <OtherProjectsList />
       </div>
     </Card>
