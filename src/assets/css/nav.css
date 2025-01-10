@@ -6,7 +6,8 @@
   text-decoration: none;
   margin: 1rem;
   color: white;
-  font-size: larger;
+  font-size: 26px;
+  text-transform: uppercase;
 }
 
 .header-nav a:hover {

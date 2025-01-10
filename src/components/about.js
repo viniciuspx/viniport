@@ -14,22 +14,22 @@ function About() {
         <div className="home__img">
           <img src={profilePicture} alt="profile"></img>
         </div>
-        <h2>Aboute me:</h2>
-        <p>
-          <h2>Software Developer | Fullstack Developer</h2>
-          Enthusiast of new technologies and a lifelong learner. While my
-          primary expertise lies in back-end development, I believe
+        <h2 className="cutive-mono-regular">Aboute me </h2>
+        <h3 className="cutive-mono-regular uppercase">
+          Software Engineer | Fullstack Developer
+        </h3>
+        <p className="about-text">
+          {" "}Enthusiast of new technologies and a lifelong learner. While
+          my primary expertise lies in back-end development, I believe
           understanding front-end development is essential for growing as a
           well-rounded developer—so I have cultivated skills in both areas. I
           have experience in back-end development from my work at Nelogica,
           where I honed my expertise in building robust and efficient systems.
           On the front-end side, I worked on Dank City projects, utilizing CSS,
-          Next.js, TypeScript, and other JavaScript libraries. While I excel in
-          coding, I admit design isn’t my strongest suit—but I enjoy
-          collaborating with designers to bring ideas to life. My main
-          programming languages are JavaScript, TypeScript, Java, Delphi, C, and
-          C++. I also have solid skills in HTML and CSS, which are invaluable in
-          bridging front-end and back-end systems seamlessly.
+          Next.js, TypeScript, and other JavaScript libraries. My main
+          programming languages are JavaScript, TypeScript, Delphi and C. I also
+          have solid skills in HTML and CSS, which are invaluable in bridging
+          front-end and back-end systems seamlessly.
         </p>
         <a href={"#edu"}>
           <img src={down} alt="downarrow" className="arrow blink"></img>
@@ -44,7 +44,7 @@ function About() {
         <a href="#profile">
           <img src={up} alt="uparrow" className="arrow blink"></img>
         </a>
-        <h2>Education:</h2>
+        <h2 className="cutive-mono-regular uppercase">Education:</h2>
         <p>
           UFG - Universidade Federal de Goiás, Goiânia
           <div className="university">
@@ -57,9 +57,9 @@ function About() {
           </div>
         </p>
         <hr />
-        <h2>Contact information:</h2>
+        <h2 className="cutive-mono-regular uppercase">Contact information:</h2>
         <address>
-          Please contact by{" "}
+          Please contact via{" "}
           <a
             href="https://www.linkedin.com/in/viniciuspx"
             target="_blank"

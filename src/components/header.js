@@ -7,9 +7,13 @@ import "../assets/css/font.css";
 
 function Header() {
   return (
-    <header className="main-header header-font">
-      <h2><Link to={"/"} className="main-header-text">Vinícius Gabriel</Link></h2>
-      <Nav></Nav>
+    <header className="main-header">
+      <h2>
+        <Link to={"/"} className="main-header-text cutive-mono-regular-bold">
+          vinicius/dev
+        </Link>
+      </h2>
+      <Nav />
     </header>
   );
 }

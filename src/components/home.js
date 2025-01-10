@@ -15,8 +15,8 @@ import linkedinlogo from "../assets/img/linkedin.png";
 import mongologo from "../assets/img/mongo.png";
 import tslogo from "../assets/img/ts.png";
 import twlogo from "../assets/img/tw.png";
-import pylogo from "../assets/img/py.png"
-import post from "../assets/img/post.png"
+import pylogo from "../assets/img/py.png";
+import post from "../assets/img/post.png";
 import Typewriter from "./typewriter";
 
 function Home() {
@@ -24,14 +24,23 @@ function Home() {
     return (
       <div className="home">
         <div className="presentation">
-          <div className="pres-content">
-            <Typewriter text="Welcome!,I'm Vinícius :),Web and Fullstack Developer" delay={185} loop={true} />
+          <div className="pres-content cutive-mono-regular">
+            <Typewriter
+              text="Welcome!,I'm Vinícius :),Web and Fullstack Developer"
+              delay={185}
+              loop={true}
+            />
           </div>
         </div>
         <div className="tech">
           <div className="tech-container">
-            <div className="tech-title">
-              {"> "} <Typewriter text="Languages and Technologies" delay={0} loop={true} />
+            <div className="tech-title cutive-mono-regular">
+              {"> "}{" "}
+              <Typewriter
+                text="Languages and Technologies"
+                delay={0}
+                loop={true}
+              />
             </div>
             <div>
               <img src={pylogo} alt="Python"></img>
@@ -47,11 +56,13 @@ function Home() {
             </div>
           </div>
 
-          <div className="under-paragraph">
+          <div className="under-paragraph cutive-mono-regular">
             <strong>Fullstack</strong> / <strong>Web</strong> Developer and{" "}
-            <em><strong>Computer Scientist</strong></em>. Always open to learning new
-            technologies and programming languages, great at code maintenance
-            and analysis.
+            <em>
+              <strong>Computer Scientist</strong>
+            </em>
+            . Always open to learning new technologies and programming
+            languages, great at code maintenance and analysis.
           </div>
 
           <div className="socials">

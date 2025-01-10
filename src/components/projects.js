@@ -2,7 +2,9 @@ import React from "react";
 import Card from "./card";
 import Anchor from "./anchor";
 import ProjectCard from "./projectCard";
+
 import "../assets/css/projects.css";
+import "../assets/css/font.css";
 
 // Images
 import port from "../assets/img/port.png";
@@ -162,12 +164,12 @@ function Projects() {
   return (
     <Card>
       <div className="text-font projects-list">
-        <h1>Projects</h1>
-        <h2>Where I've Worked:</h2>
+        <h1 className="cutive-mono-regular uppercase">Projects</h1>
+        <h2 className="cutive-mono-regular uppercase">Where I've Worked:</h2>
         <LivePageList />
-        <h2>Projects:</h2>
+        <h2 className="cutive-mono-regular uppercase">Projects:</h2>
         <ProjectList />
-        <h2>Other Projects:</h2>
+        <h2 className="cutive-mono-regular uppercase">Other Projects:</h2>
         <OtherProjectsList />
       </div>
     </Card>

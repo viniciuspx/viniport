@@ -27,7 +27,9 @@
   max-width: 300px;
   object-fit: contain;
   border: solid 3px white;
+  border-radius: 0.5rem;
   box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.3);
+  margin: auto;
 }
 
 .home__img img:hover {
@@ -49,4 +51,9 @@
 .arrow {
   display: flex;
   margin: auto;
+}
+
+.about-text{
+  text-align: justify;
+  font-weight: 300;
 }
