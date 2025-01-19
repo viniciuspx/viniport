@@ -10,7 +10,7 @@ function Header() {
     <header className="main-header">
       <h2>
         <Link to={"/"} className="main-header-text cutive-mono-regular-bold">
-          vinicius/dev
+          vinicius<span className="green">/</span>dev
         </Link>
       </h2>
       <Nav />

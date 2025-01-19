@@ -19,6 +19,8 @@ import pylogo from "../assets/img/py.png";
 import post from "../assets/img/post.png";
 import Typewriter from "./typewriter";
 
+import { IoChevronForwardOutline } from "react-icons/io5";
+
 function Home() {
   const createHome = () => {
     return (
@@ -26,7 +28,7 @@ function Home() {
         <div className="presentation">
           <div className="pres-content cutive-mono-regular">
             <Typewriter
-              text="Welcome!,I'm Vinícius :),Web and Fullstack Developer"
+              text="Welcome!,I'm Vinícius,Back-end/Fullstack DEV"
               delay={185}
               loop={true}
             />
@@ -35,12 +37,7 @@ function Home() {
         <div className="tech">
           <div className="tech-container">
             <div className="tech-title cutive-mono-regular">
-              {"> "}{" "}
-              <Typewriter
-                text="Languages and Technologies"
-                delay={0}
-                loop={true}
-              />
+              <IoChevronForwardOutline className="chevron"/> Languages and Technologies
             </div>
             <div>
               <img src={pylogo} alt="Python"></img>
@@ -57,12 +54,8 @@ function Home() {
           </div>
 
           <div className="under-paragraph cutive-mono-regular">
-            <strong>Fullstack</strong> / <strong>Web</strong> Developer and{" "}
-            <em>
-              <strong>Computer Scientist</strong>
-            </em>
-            . Always open to learning new technologies and programming
-            languages, great at code maintenance and analysis.
+            <strong>Back-end</strong> / <strong>Fullstack</strong> Developer and{" "}
+            <em>Computer Scientist</em>
           </div>
 
           <div className="socials">

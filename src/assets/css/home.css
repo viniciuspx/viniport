@@ -1,78 +1,97 @@
- /* * {
+/* * {
    border: solid red 1px;
  } */
 
- .home {
-   width: 100%;
-   height: 100%;
-   display: flex;
-   color: white;
-   flex-direction: column;
-   overflow-y: hidden;
- }
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
 
- .presentation {
-   font-size: 56px;
-   text-align: center;
-   margin: 2rem;
-   height: 100px;
-   font-family: 'Share Tech Mono', monospace;
-   color: greenyellow;
-   text-transform: uppercase;
- }
+.home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  overflow-y: hidden;
+}
 
- .pres-content {
-   margin: auto;
- }
-
- .blink {
-   animation: blinker 1s linear infinite;
- }
-
- .tech {
-   text-align: center;
-   font-family: 'Quicksand', sans-serif;
-   margin: 1rem;
- }
-
- .tech-title{
-  margin: 2rem;
-  font-size: x-large;
+.presentation {
+  text-align: center;
+  color: greenyellow;
   text-transform: uppercase;
- }
+  display: flex;
+  height: 200px;
+}
 
- .tech-container{
+.pres-content {
+  font-size: 48px;
+  margin: auto;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+.tech {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  margin: 1rem;
+}
+
+.tech-title {
+  font-size: large;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+}
+
+.chevron{
+  padding: 1px;
+}
+
+.tech-container {
   display: flex;
   flex-direction: column;
   margin: 1rem;
- }
+}
 
- .under-paragraph{
+.tech-container img {
+  height: 50px;
+}
+
+.under-paragraph {
   margin: 5rem 1rem 5rem 1rem;
   font-size: 24px;
   max-width: 1000px;
- }
+}
 
- .socials{
+.socials {
   margin: 5rem;
- }
+}
 
- @keyframes blinker {
-   50% {
-     opacity: 0;
-   }
- }
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 
- @media only screen and (max-width: 900px) {
-   .home {
-     overflow-x: hidden;
-   }
+@media only screen and (max-width: 900px) {
+  .home {
+    overflow-x: hidden;
+  }
 
-   .under-paragraph{
+  .under-paragraph {
     font-size: 20px;
-   }
+  }
 
-   .presentation {
-     min-height: 150px;
-   }
- }
+  .pres-content {
+    font-size: 28px;
+  }
+
+  .tech-title{
+    font-size: medium;
+  }
+}
