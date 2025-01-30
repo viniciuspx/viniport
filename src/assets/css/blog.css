@@ -1,23 +1,54 @@
 .main {
   margin: auto;
   padding: 5px;
-  width: 600px;
+  max-width: 600px;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .post {
-  border-bottom: 1px solid yellowgreen;
   margin: auto;
   padding: 5px;
-  width: 600px;
   color: white;
   font-weight: 400;
   font-size: 16px;
   text-align: justify;
+  border-bottom: 1px solid yellowgreen;
 }
 
 .post h3 {
   color: white;
   text-transform: uppercase;
   font-weight: 300;
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  align-self: center;
+  justify-self: center;
+}
+
+.inner_post {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 10px;
+  }
+
+  .post {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .image {
+    height: 200px;
+  }
 }

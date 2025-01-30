@@ -5,13 +5,32 @@ const formatDate = (date) => {
   return date;
 };
 
+const formatPost = (content, images) => {
+  if (images) {
+    images.forEach((image) => {
+      content = content.replace(
+        "#IMG#",
+        `<img src="${image}" alt="post image" class="image"/> <br/> <br/>`
+      );
+    });
+  }
+  var postEl = document.createElement("post");
+  postEl.innerHTML = content;
+  return postEl;
+};
+
 const Posts = ({ posts }) => {
   return (
     <div>
       {posts.map((post, index) => (
         <div key={index} className="post">
           <h3>{post.title}</h3>
-          <p>{post.content}</p>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: formatPost(post.content, post.images).outerHTML,
+            }}
+            className="inner_post"
+          />
           <br />
           <strong>
             <time>{formatDate(post.date)}</time>
