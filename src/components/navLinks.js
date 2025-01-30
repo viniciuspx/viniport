@@ -9,6 +9,7 @@ function NavLinks(props) {
       <Link onClick={props.onClick} to="/">Home</Link>
       <Link onClick={props.onClick} to="/about">About-me</Link>
       <Link onClick={props.onClick} to="/projects">Projects</Link>
+      <Link onClick={props.onClick} to="/blog">Blog</Link>
     </nav>
   );
 }
