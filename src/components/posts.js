@@ -12,9 +12,11 @@ const Posts = ({ posts }) => {
         <div key={index} className="post">
           <h3>{post.title}</h3>
           <p>{post.content}</p>
-          <time>{formatDate(post.date)}</time>
           <br />
-          Posted by <strong>{post.author}</strong>
+          <strong>
+            <time>{formatDate(post.date)}</time>
+          </strong>
+          {"  "}Posted by <strong>{post.author}</strong>
         </div>
       ))}
     </div>

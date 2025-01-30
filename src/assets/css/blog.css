@@ -1,5 +1,4 @@
 .main {
-  border-bottom: 1px solid yellowgreen;
   margin: auto;
   padding: 5px;
   width: 600px;
@@ -7,6 +6,7 @@
 }
 
 .post {
+  border-bottom: 1px solid yellowgreen;
   margin: auto;
   padding: 5px;
   width: 600px;
