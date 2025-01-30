@@ -10,6 +10,7 @@ import Home from "./home";
 import Header from "./header";
 import About from "./about";
 import Projects from "./projects";
+import Blog from "./blog";
 
 function App() {
   let routes;
@@ -19,6 +20,7 @@ function App() {
       <Route path="/" element={<Home />} exact />
       <Route path="/about" element={<About />} exact />
       <Route path="/projects" element={<Projects />} exact />
+      <Route path="/blog" element={<Blog />} exact/>
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );

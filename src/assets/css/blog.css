@@ -1,0 +1,23 @@
+.main {
+  border-bottom: 1px solid yellowgreen;
+  margin: auto;
+  padding: 5px;
+  width: 600px;
+  color: white;
+}
+
+.post {
+  margin: auto;
+  padding: 5px;
+  width: 600px;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.post h3 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+}
